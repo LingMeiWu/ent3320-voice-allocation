@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 988.0, 85.0, 890.0, 912.0 ],
+		"rect" : [ 633.0, 176.0, 924.0, 738.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,56 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-51",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 433.0, 528.0, 150.0, 62.0 ],
+					"text" : "<= Now, each note's ring modulation is controlled indivudally by the function contained inside slot #1",
+					"textcolor" : [ 0.23921568627451, 0.247058823529412, 0.905882352941176, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"linecount" : 7,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 770.0, 88.0, 150.0, 103.0 ],
+					"text" : "We can use other slots to control other note parameters: e.g. amplitude curves, microtonal \"slide\", or synth parameters such as the ring modulation",
+					"textcolor" : [ 0.23921568627451, 0.247058823529412, 0.905882352941176, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 598.5, 120.0, 150.0, 20.0 ],
+					"text" : "slot #1 (ring mod, curve)",
+					"textcolor" : [ 0.23921568627451, 0.247058823529412, 0.905882352941176, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 510.0, 98.0, 258.0, 20.0 ],
+					"text" : "<= Add (slot 1) to obtain data for each note",
+					"textcolor" : [ 0.23921568627451, 0.247058823529412, 0.905882352941176, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.929411764705882, 0.364705882352941, 1.0, 1.0 ],
 					"id" : "obj-57",
@@ -202,6 +252,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 333.5, 678.0, 35.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out 2"
 				}
 
@@ -213,6 +267,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 261.0, 678.0, 35.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out 1"
 				}
 
@@ -224,6 +282,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 193.0, 678.0, 42.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 1"
 				}
 
@@ -236,6 +298,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 193.0, 13.0, 28.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in 1"
 				}
 
@@ -293,62 +359,6 @@
 					"patching_rect" : [ 63.0, 13.0, 127.0, 75.0 ],
 					"text" : "Polyphonic\nSynth\nEngine",
 					"textjustification" : 2
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 2,
-					"id" : "obj-20",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 457.0, 50.0, 297.0, 20.0 ],
-					"text" : "We're interested in the note_LLLL, always in this form:",
-					"textcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontname" : "Courier New",
-					"fontsize" : 9.0,
-					"id" : "obj-19",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 476.952475247524944, 72.0, 268.0, 17.0 ],
-					"text" : "[pitch-in-midicents duration velocity note-flag]",
-					"textcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontname" : "Courier New",
-					"fontsize" : 9.0,
-					"id" : "obj-25",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 476.952475247524944, 35.0, 425.0, 17.0 ],
-					"text" : "note <voice_number> <MIDI_channel> [<chord_onset> [<NOTE_LLLL>] <chord_flag>]",
-					"textcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 2,
-					"id" : "obj-12",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 457.0, 13.0, 317.0, 20.0 ],
-					"text" : "Playback syntax from bach.roll is always a list in this form:",
-					"textcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
 				}
 
 			}
@@ -481,8 +491,8 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints" : [ 0.0, 0.0, 0, 28.335359563854308, 0.503939313217986, 0, 48.642609472566463, 0.262048117796783, 0, 120.425877820431452, 0.255328935289173, 0, 177.569137492087265, 0.0, 0 ],
-					"domain" : 177.571502685546875,
+					"addpoints" : [ 0.0, 0.0, 0, 768.678980212260058, 0.787405215505502, 0, 1319.57215365399702, 0.409450204130696, 0, 3266.901933803582324, 0.398951480947857, 0, 4817.078929843715741, 0.0, 0 ],
+					"domain" : 4817.14306640625,
 					"id" : "obj-36",
 					"maxclass" : "function",
 					"numinlets" : 1,
@@ -490,7 +500,7 @@
 					"outlettype" : [ "float", "", "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 317.5, 300.0, 200.0, 100.0 ],
-					"range" : [ 0.0, 0.503937005996704 ]
+					"range" : [ 0.0, 0.787401556968689 ]
 				}
 
 			}
@@ -690,31 +700,18 @@
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 2,
-					"id" : "obj-22",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 464.0, 98.0, 426.0, 48.0 ],
-					"text" : "<= <bach.playkeys> is a simple way to get the info we need to make our own synthesizers. @out t means it will return \"text output\" that we can use in our regular Max objects. Without @out t, we would get an encoded bach list (llll).",
-					"textcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
+					"color" : [ 1.0, 0.384313725490196, 0.96078431372549, 1.0 ],
 					"id" : "obj-21",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 192.0, 98.0, 270.0, 22.0 ],
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 192.0, 98.0, 285.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"versionnumber" : 80100
 					}
 ,
-					"text" : "bach.playkeys cents duration velocity @out t"
+					"text" : "bach.playkeys cents duration velocity (slot 1) @out t"
 				}
 
 			}
