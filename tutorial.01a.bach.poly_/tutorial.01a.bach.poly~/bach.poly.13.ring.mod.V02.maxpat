@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 995.0, 85.0, 890.0, 912.0 ],
+		"rect" : [ 988.0, 85.0, 890.0, 912.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -69,7 +69,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 32.0, 543.25, 153.0, 75.0 ],
-					"presentation_linecount" : 5,
 					"text" : "HOLD shift+ctrl on a note to change the velocity with my notes\nOpen inspector -> press enter to change velocity"
 				}
 
@@ -83,7 +82,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 630.452475247524944, 29.583333333333229, 202.0, 34.0 ],
-					"presentation_linecount" : 2,
 					"text" : "do shift+space after highlighting the notes to play it",
 					"textcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
 				}
@@ -280,9 +278,10 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 1.0, 0.384313725490196, 0.96078431372549, 1.0 ],
 					"id" : "obj-13",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "", "", "" ],
 					"patching_rect" : [ 419.5, 357.0, 191.0, 22.0 ],
@@ -468,7 +467,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 5.5, 8.0, 617.952475247524831, 29.0 ],
-					"presentation_linecount" : 7,
 					"text" : "13. Our Ring Modulation poly~ - Controlled by a function Slot"
 				}
 
@@ -585,24 +583,27 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "z.credits.v01.bp.maxpat",
-				"bootpath" : "~/Downloads/myClasses/ent3320/ent3320-voice-allocation/tutorial.01a.bach.poly_/tutorial.01a.bach.poly~",
-				"patcherrelativepath" : ".",
+				"name" : "bach.slot2curve.maxpat",
+				"bootpath" : "C74:/packages/bach/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "z.CMC-logo300dpi.2x.gif",
-				"bootpath" : "~/Downloads/myClasses/ent3320/ent3320-voice-allocation/tutorial.01a.bach.poly_/tutorial.01a.bach.poly~",
-				"patcherrelativepath" : ".",
-				"type" : "GIFf",
+				"name" : "bach.times.maxpat",
+				"bootpath" : "C74:/packages/bach/patchers",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "z.by-sa.2x.png",
-				"bootpath" : "~/Downloads/myClasses/ent3320/ent3320-voice-allocation/tutorial.01a.bach.poly_/tutorial.01a.bach.poly~",
-				"patcherrelativepath" : ".",
-				"type" : "PNG",
+				"name" : "bach.x2dx.maxpat",
+				"bootpath" : "C74:/packages/bach/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bach.filternull.maxpat",
+				"bootpath" : "C74:/packages/bach/patchers",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -623,6 +624,54 @@
 			}
 , 			{
 				"name" : "bach.args.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "bach.trans.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "bach.pick.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "bach.iter.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "bach.collect.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "bach.flat.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "bach.slice.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "bach.lace.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "bach.reg.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "bach.eq.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "bach.gt.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "bach.join.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "bach.keys.mxe64",
 				"type" : "mx64"
 			}
  ],
