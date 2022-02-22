@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 633.0, 176.0, 924.0, 738.0 ],
+		"rect" : [ 546.0, 620.0, 924.0, 738.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -54,11 +54,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-22",
-					"linecount" : 7,
+					"linecount" : 6,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 770.0, 88.0, 150.0, 103.0 ],
+					"patching_rect" : [ 770.0, 88.0, 153.0, 89.0 ],
 					"text" : "We can use other slots to control other note parameters: e.g. amplitude curves, microtonal \"slide\", or synth parameters such as the ring modulation",
 					"textcolor" : [ 0.23921568627451, 0.247058823529412, 0.905882352941176, 1.0 ]
 				}
@@ -252,10 +252,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 333.5, 678.0, 35.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out 2"
 				}
 
@@ -267,10 +263,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 261.0, 678.0, 35.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out 1"
 				}
 
@@ -282,10 +274,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 193.0, 678.0, 42.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out~ 1"
 				}
 
@@ -298,10 +286,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 193.0, 13.0, 28.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in 1"
 				}
 
@@ -491,7 +475,7 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints" : [ 0.0, 0.0, 0, 768.678980212260058, 0.787405215505502, 0, 1319.57215365399702, 0.409450204130696, 0, 3266.901933803582324, 0.398951480947857, 0, 4817.078929843715741, 0.0, 0 ],
+					"addpoints" : [ 0.0, 0.0, 0, 768.678672871163144, 0.787405392677628, 0, 1319.571626049153338, 0.409450296260087, 0, 3266.900627597415678, 0.398951570714956, 0, 4817.077003829914247, 0.0, 0 ],
 					"domain" : 4817.14306640625,
 					"id" : "obj-36",
 					"maxclass" : "function",
@@ -753,6 +737,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 0.874509803921569, 0.250980392156863, 0.717647058823529, 1.0 ],
+					"destination" : [ "obj-47", 1 ],
+					"source" : [ "obj-21", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-24", 0 ]
 				}
@@ -846,7 +838,7 @@
 				"patchline" : 				{
 					"color" : [ 1.0, 0.313725490196078, 0.749019607843137, 1.0 ],
 					"destination" : [ "obj-47", 0 ],
-					"midpoints" : [ 337.0, 215.0, 511.75, 215.0, 511.75, 214.0, 686.5, 214.0 ],
+					"midpoints" : [ 337.0, 215.0, 511.75, 215.0, 511.75, 179.0, 686.5, 179.0 ],
 					"source" : [ "obj-41", 1 ]
 				}
 
